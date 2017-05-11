@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Present UIAlertController when not in a UIViewController"
+title:  Present UIAlertController when not in a UIViewController
 date:   2017-05-10 02:13:17 -0700
 categories: jekyll update
 ---
