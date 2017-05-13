@@ -14,13 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Lazyself
-email: zuchie@gmail.com
+email:
 description: > # this means to ignore newlines until "baseurl:"
    A little bit this, a little bit that...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: zuchie
-github_username: zuchie
+url: "http://lazyself.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username: 
+disqus:
+  shortname: lazyself-io
+google_analytics: true 
 
 # Build settings
 markdown: kramdown
