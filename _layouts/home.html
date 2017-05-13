@@ -18,6 +18,7 @@ layout: default
           <h2>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h2>
+            <a class="post-meta" href="{{ post.url | absolute_url }}#disqus_thread"></a>
 
         </li>
       {% endfor %}
