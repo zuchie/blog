@@ -44,7 +44,11 @@
         <!---
         <p>{{ site.description | escape }}</p>
         --->
-        <p align="right">© 2017 {{ site.title | escape }}</p>
+        <p align="right">
+          <span>© 2017 {{ site.title | escape }}</span>
+          <span style="padding-left:5px;padding-right:5px">•</span>
+          <span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
+        </p>
       </div>
 
     </div>
