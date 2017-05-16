@@ -18,9 +18,11 @@
               --->
             {% endif %}
             </li>
+            <!---
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
+            --->
         </ul>
       </div>
 
@@ -49,7 +51,10 @@
           <span style="padding-left:5px;padding-right:5px">•</span>
           <span class="rss-subscribe">
             <a href="{{ "/feed.xml" | relative_url }}">
-              <img src="/assets/img/rss.png" alt="RSS" width="20px" style="position:relative;bottom:3px">
+              <img src="/assets/img/rss.png" alt="RSS" width="30px" style="position:relative;bottom:3px">
+            </a>
+            <a href="mailto:{{ site.email }}">
+              <img src="/assets/img/email.png" alt="Email" width="30px" style="position:relative;bottom:3px">
             </a>
           </span>
         </p>
