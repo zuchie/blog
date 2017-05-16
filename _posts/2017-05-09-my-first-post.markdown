@@ -29,3 +29,34 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 # Hello...
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight swift linenos %}
+func show() {
+  let window = UIWindow(frame: UIScreen.main.bounds)
+  window.rootViewController = UIViewController()
+  window.windowLevel = UIWindowLevelAlert
+  window.makeKeyAndVisible()
+  window.rootViewController?.present(self, animated: false, completion: nil)
+}
+// Present alert from a temporary view controller.
+{% endhighlight %}
+
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight swift linenos %}
+func show() {
+  let window = UIWindow(frame: UIScreen.main.bounds)
+  window.rootViewController = UIViewController()
+  window.windowLevel = UIWindowLevelAlert
+  window.makeKeyAndVisible()
+  window.rootViewController?.present(self, animated: false, completion: nil)
+}
+// Present alert from a temporary view controller.
+{% endhighlight %}
