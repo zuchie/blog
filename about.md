@@ -4,11 +4,11 @@ title:  About
 permalink: /about/
 ---
 
-I'm a software guy, and I had been doing some low level verification and programming works. Last year(2016), I found myself getting interested in iOS app develepment and I've started my journey of learning and using it ever since. 
+Hello from a peaceful software guy, who had been doing low level programming and verification works for some years, and has recently been fascinated with iOS app development. 
 
-I setup this blog to summarize and save the things that are important to me in this journey. In this early stage, most of them will be what I've learned from other great ideas and methods, summaries of a protocol in a spec, my own experiences and thoughts about my projects, and maybe a few other topics for distraction. 
+This blog was built in order to summarize and share knowledge and ideas. For now, most posts will be concerning Swift and iOS app development, maybe a few others with different subjects for distraction. 
 
-Take your time scrolling around, you might find something you like.
+If you are interested in Swift and iOS app development, take your time scrolling around, you might find something you like.
 \\
 \\
 \\
