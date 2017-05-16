@@ -8,7 +8,7 @@ Hello from a peaceful software guy, who had been doing low level programming and
 
 This blog was built in order to summarize and share knowledge and ideas. For now, most posts will be concerning Swift and iOS app development, maybe a few others with different subjects for distraction. 
 
-If you are interested in Swift and iOS app development, take your time scrolling around, you might find something you like.
+If you are interested in Swift and iOS app development, take your time scrolling around, you might find something you like. Cheers.
 \\
 \\
 \\
