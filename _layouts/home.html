@@ -15,21 +15,25 @@ layout: default
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             <div class="post-meta">
               {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              <img src="/assets/img/date.png" alt="Date" width="15px" style="filter:opacity(50%);position:relative;bottom:1px">
               <span>{{ post.date | date: date_format }}</span>
               <span style="padding-left:5px;padding-right:5px">•</span>
+              <img src="/assets/img/read_time.png" alt="Read time" width="25px" style="filter:opacity(45%);position:relative;bottom:1px">
               {% assign readTime = page.content | number_of_words | divided_by: 180 | round %} 
               {% if readTime != 0 %}
                 {{ readTime }}
               {% else %}
                 1
-              {% endif %} min read
+              {% endif %} min
               <span style="padding-left:5px;padding-right:5px">•</span>
+              <img src="/assets/img/comments.png" alt="Comments" width="16px" style="filter:opacity(50%);position:relative;bottom:1px">
               <a href="{{ post.url | absolute_url }}#disqus_thread"></a>
               <!---
               <span class="disqus-comment-count" data-disqus-identifier="{{ post.url | relative_url }}"></span>
               --->
             </div>
           </h2>
+          {{ post.excerpt }}
         </li>
       {% endfor %}
     </ul>

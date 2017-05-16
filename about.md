@@ -9,9 +9,15 @@ I'm a software guy, and I had been doing some low level verification and program
 I setup this blog to summarize and save the things that are important to me in this journey. In this early stage, most of them will be what I've learned from other great ideas and methods, summaries of a protocol in a spec, my own experiences and thoughts about my projects, and maybe a few other topics for distraction. 
 
 Take your time scrolling around, you might find something you like.
+\\
+\\
+\\
+\\
+*Blogging with
+<a href="https://jekyllrb.com">![Jekyll](/assets/img/jekyll.png){: style="width:80px"}</a> +
+<a href="https://disqus.com">![Disqus](/assets/img/disqus.png){: style="width:70px"}</a>+
+<a href="https://pages.github.com">![Github Pages](/assets/img/github_pages.png){: style="width:90px"}</a>*{: style="color:gray;font-size:15px"}
 
----
-Blog setup by [Jekyll](https://jekyllrb.com), Commenting System setup by [Disqus](https://disqus.com)
 
 <!---
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
