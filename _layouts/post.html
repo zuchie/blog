@@ -15,7 +15,7 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}
       <span style="padding-left:5px;padding-right:5px">•</span>
-      <img src="/assets/img/read_time.png" alt="Read time" width="25px" style="filter:opacity(45%);position:relative;bottom:1px">
+      <img src="/assets/img/read_time.png" alt="Read time" width="25px" style="filter:opacity(42%);position:relative;bottom:1px">
       {% assign readTime = page.content | number_of_words | divided_by: 180 %} 
       {% if readTime != 0 %}
         {{ readTime }}

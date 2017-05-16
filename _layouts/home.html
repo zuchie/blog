@@ -18,7 +18,7 @@ layout: default
               <img src="/assets/img/date.png" alt="Date" width="15px" style="filter:opacity(50%);position:relative;bottom:1px">
               <span>{{ post.date | date: date_format }}</span>
               <span style="padding-left:5px;padding-right:5px">•</span>
-              <img src="/assets/img/read_time.png" alt="Read time" width="25px" style="filter:opacity(45%);position:relative;bottom:1px">
+              <img src="/assets/img/read_time.png" alt="Read time" width="25px" style="filter:opacity(42%);position:relative;bottom:1px">
               {% assign readTime = post.content | number_of_words | divided_by: 180 %} 
               {% if readTime != 0 %}
                 {{ readTime }}
