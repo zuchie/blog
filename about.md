@@ -8,15 +8,18 @@ Hello from a peaceful software guy, who had been doing low level programming and
 
 This blog was built in order to summarize and share knowledge and ideas. For now, most posts will be concerning Swift and iOS app development, maybe a few others with different subjects for distraction. 
 
-If you are interested in Swift and iOS app development, take your time scrolling around, you might find something you like. Cheers.
+If you are interested in Swift and iOS app development, take your time scrolling around, you might find something you like.
+
+Cheers.
 \\
 \\
 \\
 \\
 *Blogging with
+<a href="https://domains.google">![Google Domains](/assets/img/google_domains.png){: style="width:130px"}</a>+
+<a href="https://pages.github.com">![Github Pages](/assets/img/github_pages.png){: style="width:90px"}</a>+
 <a href="https://jekyllrb.com">![Jekyll](/assets/img/jekyll.png){: style="width:80px"}</a> +
-<a href="https://disqus.com">![Disqus](/assets/img/disqus.png){: style="width:70px"}</a>+
-<a href="https://pages.github.com">![Github Pages](/assets/img/github_pages.png){: style="width:90px"}</a>*{: style="color:gray;font-size:15px"}
+<a href="https://disqus.com">![Disqus](/assets/img/disqus.png){: style="width:70px"}</a>*{: style="color:gray;font-size:15px"}
 
 
 <!---
