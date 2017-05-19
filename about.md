@@ -4,7 +4,7 @@ title:  About
 permalink: /about/
 ---
 
-Hello from a peaceful software guy, who had been doing low level programming and verification works for some years, and has recently been fascinated with iOS app development. 
+Hello, my name is Pete Cui, I'm a software developer. I had been doing low level verification and programming works for some years, and has recently been fascinated with iOS app development. Aside from sitting behind the keyboard, I enjoy hanging out with my wife Yang and a few close friends, searching for exotic food in the Bay area, hiking and camping in the wilderness, and snowboarding in the powder.
 
 This blog was built in order to summarize and share knowledge and ideas. For now, most posts will be concerning Swift and iOS app development, maybe a few others with different subjects. 
 
