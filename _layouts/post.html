@@ -15,7 +15,7 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}
       <span style="padding-left:5px;padding-right:5px">•</span>
-      <img src="/assets/img/stopwatch.png" alt="Read time" width="18px" style="filter:opacity(55%);position:relative;bottom:2px">
+      <img src="/assets/img/stopwatch.png" alt="Read time" width="18px" style="filter:opacity(50%);position:relative;bottom:2px">
       {% assign readTime = page.content | number_of_words | divided_by: 180 %} 
       {% if readTime != 0 %}
         {{ readTime }}
@@ -23,7 +23,7 @@ layout: default
         1
       {% endif %} min
       <span style="padding-left:5px;padding-right:5px">•</span>
-      <img src="/assets/img/comments.jpg" alt="Comments" width="17px" style="filter:opacity(55%);position:relative;bottom:2px">
+      <img src="/assets/img/comments.jpg" alt="Comments" width="17px" style="filter:opacity(50%);position:relative;bottom:2px">
       <a href="{{ page.url | absolute_url }}#disqus_thread"></a>
       <!---
       <span class="disqus-comment-count" data-disqus-identifier="{{ page.url | relative_url }}"></span>
