@@ -14,50 +14,50 @@ UIAlertController is a subclass of UIViewController. If we want to present an al
 **A. Use recursion to find currently visible view controller as the presenting view controller.**
 ```swift
 extension UIApplication {
-     class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
-         if let tabController = controller as? UITabBarController {
-             return topViewController(controller: tabController.selectedViewController)
-         }
-         if let navController = controller as? UINavigationController {
-             return topViewController(controller: navController.visibleViewController)
-         }
-         if let presented = controller?.presentedViewController {
-             return topViewController(controller: presented)
-         }
-         return controller
-     }
+  class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    if let tabController = controller as? UITabBarController {
+      return topViewController(controller: tabController.selectedViewController)
+    }
+    if let navController = controller as? UINavigationController {
+      return topViewController(controller: navController.visibleViewController)
+    }
+    if let presented = controller?.presentedViewController {
+      return topViewController(controller: presented)
+    }
+    return controller
+  }
 }
 ```
 Then we can present alert:
-~~~~~~swift
+```swift
 UIApplication.topViewController()?.present(alertController, animated: false, completion: nil)
-~~~~~~
+```
 
 Referenced from [dianz's answer](http://stackoverflow.com/questions/26667009/get-top-most-uiviewcontroller). However, there may have corner case that the top view controller got from this recursion is not the view controller that we want to be the presenting view controller. For instance, view controller A presents view controller B, an alert is expected to be presented by A right after unwinding from B back to A. What we get from recursion would be B because at that time B is still in the process of being deinitialized. It still is the top view controller untill the deinitialization is fully completed. An error will occur because an alert is presented by a soon-to-be dismissed view controller.
 
 **B. Define an alert protocol, ask the classes that need to present alert to conform to have a view controller property which will be used to present alerts.**
 ```swift
 protocol AlertProtocol {
-    weak var alertPresentingVC: UIViewController? { get set }
+  weak var alertPresentingVC: UIViewController? { get set }
 }
 
 class ClassNeedsToPresentAlerts: AlertProtocol {
-    weak var alertPresentingVC: UIViewController?
+  weak var alertPresentingVC: UIViewController?
 }
 ```
 
-This approach resolves the corner case mentioned above because we can explicitly reference the presenting view controller property to the expected view controller. The pitfall of this approach is that every class has to conform to the protocol and has to have this property. It also makes class decoupling hard to achieve because view controllers has to be passed around to where alerts are to be presented.
+This approach resolves the corner case mentioned above because we can explicitly reference the presenting view controller property to the expected view controller. The drawback of this approach is that every class has to conform to the protocol and has to have this property. It also makes class decoupling hard to achieve because view controllers has to be passed around to where alerts are to be presented.
 
 **C. Create a UIWindow with a UIViewController to present UIAlertController on it.**
 ```swift
 extension UIAlertController {
-    func show() {
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIViewController()
-        window.windowLevel = UIWindowLevelAlert
-        window.makeKeyAndVisible()
-        window.rootViewController?.present(self, animated: false, completion: nil)
-    }
+  func show() {
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    window.rootViewController = UIViewController()
+    window.windowLevel = UIWindowLevelAlert
+    window.makeKeyAndVisible()
+    window.rootViewController?.present(self, animated: false, completion: nil)
+  }
 }
 ```
 
