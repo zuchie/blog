@@ -4,9 +4,9 @@ title:  About
 permalink: /about/
 ---
 
-Hello, my name is Pete Cui, I'm a software developer. I had been doing low level verification and programming works for some years, and has recently been fascinated with iOS app development.
+Hello, my name is Pete Cui, I'm a software developer whose prose is code. I had been doing low level verification and programming works for some years, and has recently been fascinated with iOS app development.
 
-Aside from sitting behind :computer:, I enjoy hanging out with my wife Yang:princess: and a few close :couple: searching for exotic :ramen::pizza::hamburger::sushi::oden::meat_on_bone::spaghetti::cake:... in the Bay area, hiking and :camping: in the beautiful wilderness, :bike: in the warm gentle breeze, and :snowboarder: in the enchanted powder.
+Aside from sitting behind :computer: writing my prose, I enjoy hanging out with my wife Yang:princess: and a few close :couple: searching for exotic :ramen::pizza::hamburger::sushi::oden::meat_on_bone::spaghetti::cake:... in the Bay area, hiking and :camping: in the beautiful wilderness, :bike: in the warm gentle breeze, and :snowboarder: in the enchanted powder.
 
 This blog was built in order to summarize and share knowledge and ideas:bulb:. For now, most posts will be concerning <a href="https://swift.org/" alt="Swift icon">![Swift](/assets/img/swift.png){: style="width:20px"}</a> and iOS app development, maybe a few others with different subjects. 
 
