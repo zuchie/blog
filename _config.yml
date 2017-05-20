@@ -33,6 +33,7 @@ theme: minima
 gems:
   - jekyll-feed
   - jekyll-sitemap
+  - jemoji
 exclude:
   - Gemfile
   - Gemfile.lock
