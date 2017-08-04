@@ -32,7 +32,27 @@ Let's take a look at an implementation from Apple's IteratorProtocol:
 
 ![iterator](/assets/img/for-in-loop/iterator.png)
 
-Together with this implementation, we realize that because `array` is of value type, it's been copied for the for-in loop, and it's the copy that's been iterated over. As a result, any mutations to the instance `array` inside of for-in don't affect the iteration of the copy and its items.
+Together with this implementation, we realize that because `array` is of value type, it's been copied for the for-in loop, and it's the copy that's been iterated over. As a result, any mutations to the instance `array` inside of for-in don't affect the iteration of the copy and its items. So the results should be:
+```swift
+1
+2
+3
+[4, 5, 6]
+```
+If we want to mutate the array inside for-in loop, here is a way:
+```swift
+var array = [1, 2, 3]
+for i in 0..<array.count {
+  print(array[i])
+  array[1] = 0
+}
+print(array)
+
+1
+0
+3
+[1, 0, 3]
+```
 
 Also, because the `Countdown` is of type struct. It has value semantics. The statement `countdown0/1.start = 0` inside the for-in don't affect the iteration and its items. So we could expect the prints should be:
 ```swift
