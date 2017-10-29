@@ -29,6 +29,10 @@ google_analytics: true
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  syntax_highlighter: rouge
+
 theme: minima
 gems:
   - jekyll-feed

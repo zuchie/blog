@@ -14,7 +14,7 @@ I want to make a chatbot to do simple communication and API queries. In order to
 **Implementation**
 
 The `NSLinguisticTagger` class is intuitive to use. A few lines of code would make it work. Here is a simple implementation for test:
-```swift
+``` swift
   func nlp(_ text: String) {
     let text = text 
     let tagScheme = NSLinguisticTagSchemeNameType
