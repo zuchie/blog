@@ -25,14 +25,10 @@ twitter_username:
 github_username: 
 disqus:
   shortname: lazyself-io
-google_analytics: true
+google_analytics: true 
 
 # Build settings
 markdown: kramdown
-
-kramdown:
-  syntax_highlighter: rouge
-
 theme: minima
 gems:
   - jekyll-feed
